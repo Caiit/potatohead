@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Lagrand_pset1</string>
+    <!--Title-->
+    <string name="title">Mr. Potato Head</string>
+
+    <!--Add checkboxes-->
+    <string name="checkboxes">Click the items you want to add</string>
+
+    <!--Item names-->
+    <string name="body">Body</string>
+    <string name="hat">Hat</string>
+    <string name="eyes">Eyes</string>
+    <string name="ears">Ears</string>
+    <string name="nose">Nose</string>
+    <string name="mouth">Mouth</string>
+    <string name="glasses">Glasses</string>
+    <string name="eyebrows">Eyebrows</string>
+    <string name="mustache">Mustache</string>
+    <string name="arms">Arms</string>
+    <string name="shoes">Shoes</string>
 </resources>
