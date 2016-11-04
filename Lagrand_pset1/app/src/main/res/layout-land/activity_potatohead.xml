@@ -12,301 +12,316 @@
     tools:context="com.example.cait.lagrand_pset1.potatohead">
 
     <!--Title-->
-    <TextView
-        android:text="@string/title"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <!--Images-->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/title"
-        android:textSize="36sp"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerVertical="true">
+        <!-- Body image -->
+        <ImageView
+            android:contentDescription="@string/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/body"
+            android:id="@+id/bodyImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <!-- Body image -->
-    <ImageView
-        android:contentDescription="@string/body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/body"
-        android:id="@+id/bodyImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <!-- Hat image -->
+        <ImageView
+            android:contentDescription="@string/hat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hat"
+            android:id="@+id/hatImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Hat image -->
-    <ImageView
-        android:contentDescription="@string/hat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hat"
-        android:id="@+id/hatImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Eyes image -->
+        <ImageView
+            android:contentDescription="@string/eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/eyes"
+            android:id="@+id/eyesImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Eyes image -->
-    <ImageView
-        android:contentDescription="@string/eyes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/eyes"
-        android:id="@+id/eyesImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Ears image -->
+        <ImageView
+            android:contentDescription="@string/ears"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ears"
+            android:id="@+id/earsImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Ears image -->
-    <ImageView
-        android:contentDescription="@string/ears"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ears"
-        android:id="@+id/earsImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Nose image -->
+        <ImageView
+            android:contentDescription="@string/nose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nose"
+            android:id="@+id/noseImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Nose image -->
-    <ImageView
-        android:contentDescription="@string/nose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/nose"
-        android:id="@+id/noseImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Mouth image -->
+        <ImageView
+            android:contentDescription="@string/mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mouth"
+            android:id="@+id/mouthImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Mouth image -->
-    <ImageView
-        android:contentDescription="@string/mouth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/mouth"
-        android:id="@+id/mouthImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Glasses image -->
+        <ImageView
+            android:contentDescription="@string/glasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/glasses"
+            android:id="@+id/glassesImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Glasses image -->
-    <ImageView
-        android:contentDescription="@string/glasses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/glasses"
-        android:id="@+id/glassesImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Eyebrows image -->
+        <ImageView
+            android:contentDescription="@string/eyebrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/eyebrows"
+            android:id="@+id/eyebrowsImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Eyebrows image -->
-    <ImageView
-        android:contentDescription="@string/eyebrows"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/eyebrows"
-        android:id="@+id/eyebrowsImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Mustache image -->
+        <ImageView
+            android:contentDescription="@string/mustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mustache"
+            android:id="@+id/mustacheImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Mustache image -->
-    <ImageView
-        android:contentDescription="@string/mustache"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/mustache"
-        android:id="@+id/mustacheImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Arms image -->
+        <ImageView
+            android:contentDescription="@string/arms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arms"
+            android:id="@+id/armsImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
-    <!-- Arms image -->
-    <ImageView
-        android:contentDescription="@string/arms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/arms"
-        android:id="@+id/armsImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        <!-- Shoes image -->
+        <ImageView
+            android:contentDescription="@string/shoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shoes"
+            android:id="@+id/shoesImage"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
 
-    <!-- Shoes image -->
-    <ImageView
-        android:contentDescription="@string/shoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/shoes"
-        android:id="@+id/shoesImage"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible" />
+    </RelativeLayout>
 
-    <!-- Checkboxes -->
-    <TextView
-        android:text="@string/checkboxes"
+    <!-- Checkboxes without gridlayout, but with own placement-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkboxtext"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/mouthbox"/>
+        android:layout_height="match_parent">
 
-    <!--Left column-->
-    <CheckBox
-        android:text="@string/hat"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="100dp"
-        android:onClick="showImage"
-        android:id="@+id/hatbox" />
+        <!-- Checkboxes -->
+        <TextView
+            android:text="@string/checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxtext"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/mouthbox"/>
 
-    <CheckBox
-        android:text="@string/eyes"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/hatbox"
-        android:layout_alignStart="@+id/hatbox"
-        android:layout_marginBottom="75dp"
-        android:onClick="showImage"
-        android:id="@+id/eyesbox" />
+        <!--Left column-->
+        <CheckBox
+            android:text="@string/hat"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="showImage"
+            android:id="@+id/hatbox" />
 
-    <CheckBox
-        android:text="@string/ears"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/hatbox"
-        android:layout_alignStart="@+id/hatbox"
-        android:layout_marginBottom="50dp"
-        android:onClick="showImage"
-        android:id="@+id/earsbox" />
+        <CheckBox
+            android:text="@string/eyes"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/hatbox"
+            android:layout_alignStart="@+id/hatbox"
+            android:layout_marginBottom="75dp"
+            android:onClick="showImage"
+            android:id="@+id/eyesbox" />
 
-    <CheckBox
-        android:text="@string/nose"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/hatbox"
-        android:layout_alignStart="@+id/hatbox"
-        android:layout_marginBottom="25dp"
-        android:onClick="showImage"
-        android:id="@+id/nosebox" />
+        <CheckBox
+            android:text="@string/ears"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/hatbox"
+            android:layout_alignStart="@+id/hatbox"
+            android:layout_marginBottom="50dp"
+            android:onClick="showImage"
+            android:id="@+id/earsbox" />
 
-    <CheckBox
-        android:text="@string/mouth"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/hatbox"
-        android:layout_alignStart="@+id/hatbox"
-        android:layout_marginBottom="0dp"
-        android:onClick="showImage"
-        android:id="@+id/mouthbox" />
+        <CheckBox
+            android:text="@string/nose"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/hatbox"
+            android:layout_alignStart="@+id/hatbox"
+            android:layout_marginBottom="25dp"
+            android:onClick="showImage"
+            android:id="@+id/nosebox" />
 
-    <!--Right column-->
-    <CheckBox
-        android:text="@string/glasses"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="50dp"
-        android:layout_alignBaseline="@+id/hatbox"
-        android:layout_alignBottom="@+id/hatbox"
-        android:onClick="showImage"
-        android:id="@+id/glassesbox" />
+        <CheckBox
+            android:text="@string/mouth"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/hatbox"
+            android:layout_alignStart="@+id/hatbox"
+            android:layout_marginBottom="0dp"
+            android:onClick="showImage"
+            android:id="@+id/mouthbox" />
 
-    <CheckBox
-        android:text="@string/eyebrows"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/glassesbox"
-        android:layout_alignStart="@+id/glassesbox"
-        android:layout_alignBaseline="@+id/eyesbox"
-        android:layout_alignBottom="@+id/eyesbox"
-        android:onClick="showImage"
-        android:id="@+id/eyebrowsbox" />
+        <!--Right column-->
+        <CheckBox
+            android:text="@string/glasses"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignBaseline="@+id/hatbox"
+            android:layout_alignBottom="@+id/hatbox"
+            android:onClick="showImage"
+            android:id="@+id/glassesbox" />
 
-    <CheckBox
-        android:text="@string/mustache"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/glassesbox"
-        android:layout_alignStart="@+id/glassesbox"
-        android:layout_alignBaseline="@+id/earsbox"
-        android:layout_alignBottom="@+id/earsbox"
-        android:onClick="showImage"
-        android:id="@+id/mustachebox" />
+        <CheckBox
+            android:text="@string/eyebrows"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/glassesbox"
+            android:layout_alignStart="@+id/glassesbox"
+            android:layout_alignBaseline="@+id/eyesbox"
+            android:layout_alignBottom="@+id/eyesbox"
+            android:onClick="showImage"
+            android:id="@+id/eyebrowsbox" />
 
-    <CheckBox
-        android:text="@string/arms"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/glassesbox"
-        android:layout_alignStart="@+id/glassesbox"
-        android:layout_alignBaseline="@+id/nosebox"
-        android:layout_alignBottom="@+id/nosebox"
-        android:onClick="showImage"
-        android:id="@+id/armsbox" />
+        <CheckBox
+            android:text="@string/mustache"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/glassesbox"
+            android:layout_alignStart="@+id/glassesbox"
+            android:layout_alignBaseline="@+id/earsbox"
+            android:layout_alignBottom="@+id/earsbox"
+            android:onClick="showImage"
+            android:id="@+id/mustachebox" />
 
-    <CheckBox
-        android:text="@string/shoes"
-        android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/glassesbox"
-        android:layout_alignStart="@+id/glassesbox"
-        android:layout_alignBaseline="@+id/mouthbox"
-        android:layout_alignBottom="@+id/mouthbox"
-        android:onClick="showImage"
-        android:id="@+id/shoesbox" />
+        <CheckBox
+            android:text="@string/arms"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/glassesbox"
+            android:layout_alignStart="@+id/glassesbox"
+            android:layout_alignBaseline="@+id/nosebox"
+            android:layout_alignBottom="@+id/nosebox"
+            android:onClick="showImage"
+            android:id="@+id/armsbox" />
 
-
+        <CheckBox
+            android:text="@string/shoes"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/glassesbox"
+            android:layout_alignStart="@+id/glassesbox"
+            android:layout_alignBaseline="@+id/mouthbox"
+            android:layout_alignBottom="@+id/mouthbox"
+            android:onClick="showImage"
+            android:id="@+id/shoesbox" />
+    </RelativeLayout>
 </RelativeLayout>
